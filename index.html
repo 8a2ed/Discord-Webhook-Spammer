@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+  <title>Webhook Spammer</title>
+</head>
+
+<body>
+  <h1>Discord Webhook Spammer</h1>
+  <center>
+    <div id="controls">
+      <div class="inputs">
+        <input id="url" placeholder="Webhook URL:">
+        <input id="username" placeholder="Webhook Username:">
+        <input id="message" placeholder="Message:">
+        <input id="avatar" placeholder="Avatar URL:">
+      </div>
+      <div class="buttons">
+        <button id="start">Start</button>
+        <button id="stop" disabled>Stop</button>
+      </div>
+    </div>
+  </center>
+  <a href="#del" id="delLink">Delete Webhook</a>
+  <center>
+    <div id="delModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="delClose">&times;</span>
+        <h2>Delete Webhook</h2>
+        <div id="delControls">
+          <input id="delUrl" placeholder="Webhook URL:">
+          <button id="delete">Delete</button>
+        </div>
+      </div>
+    </div>
+  </center>
+
+  <a href="#about" id="aboutLink">About</a>
+  <center>
+    <div id="aboutModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="aboutClose">&times;</span>
+        <center>
+          <h2>About This Tool</h2>
+        </center>
+        <center>
+          <p>
+            This is a discord webhook spamming tool created by 8a2ed/Ares (Education Purpose)
+            <br>
+            <center><a href="https://discord.gg/uxyBuYcgNQ">Discord Server (Fsociety)</a></center>
+          </p>
+        </center>
+      </div>
+    </div>
+  </center>
+
+  <script src="js/script.js"></script>
+  <script src="js/modals.js"></script>
+</body>
+
+</html>
